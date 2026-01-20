@@ -1,0 +1,96 @@
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.contact-text {
+    margin-bottom: 30px;
+}
+
+.contact-text h3 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #212121;
+    font-family: "Catamaran", sans-serif;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 1px;
+    line-height: 1.8;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+    padding: 35px;
+    border-radius: 5px;
+}
+
+.contact-form form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form form label {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: #212121;
+    margin-bottom: 5px;
+}
+
+.contact-form form .form-control {
+    height: 55px;
+    padding: 0 15px;
+    line-height: initial;
+    color: #212121;
+    background-color: #f8f6f6;
+    border: 1px solid #f8f6f6;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: unset !important;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contact-form form textarea.form-control {
+    height: auto !important;
+    padding-top: 15px;
+}
+
+.contact-form .send-btn {
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.contact-form .send-btn .default-btn {
+    border: none;
+    display: inline-block;
+    width: 100%;
+        pointer-events: all;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.default-btn {
+    display: inline-block;
+    padding: 14px 35px;
+    background-color: #086AD8;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 2px;
+    border: none;
+}
+
+.default-btn:hover {
+    background-color: #10dce8;
+}

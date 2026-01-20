@@ -1,0 +1,62 @@
+<!-- CEO / Founder Section -->
+<section class="team-section pt-100 pb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-6 col-sm-6">
+        <div class="tech-content">
+          <h3>Muhammad Saad (CEO/Founder)</h3>
+          <div class="bar"></div>
+          <p>
+            As the founder and CEO of Exytex, Muhammad Saad is responsible for the growth and success of Exytex. He is a mentor, visionary and motivator who believes in nurturing his people to find their passion and purpose.
+            <br>
+            My company always prefer ongoing relationship, not just one-time transaction. I believe that every client is a foundation on which our whole company is erected. strengthening them is our top priority. Our team is fully devoted to real-time market insights for our clients. Providing our clients with the best advice on which they can make a good decision. Our journey toward excellence is always marked by the trust embodied by our clients. If you choose Exytex, you are not only satisfied with your best services but also with the guides that can help you in growing your business
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-7 col-md-6 col-sm-6">
+        <div class="team-item">
+          <div class="image">
+            <img src="/image/saadteam.png" alt="Muhammad Saad">
+            <ul class="social">
+              <li><a href="#" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+              <li><a href="#" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+              <li><a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+              <li><a href="#" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="content">
+            <h3>Muhammad Saad</h3>
+            <span>CEO / Founder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Members Section -->
+<section class="team-section pt-100 pb-100">
+  <div class="container">
+    <div class="row">
+      <!-- Team Member -->
+      <div class="col-lg-3 col-md-6 col-sm-6" *ngFor="let member of teamMembers">
+        <div class="team-item">
+          <div class="image">
+            <img [src]="member.img" [alt]="member.name">
+            <ul class="social">
+              <li><a href="#" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+              <li><a href="#" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+              <li><a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+              <li><a href="#" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div class="content">
+            <h3>{{ member.name }}</h3>
+            <span>{{ member.role }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,60 @@
+.ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.development-text h1 {
+    font-size: 220%;
+    color: black;
+    font-weight: bold;
+    font-family: "Catamaran", sans-serif;
+}
+
+.development-text .bar {
+    height: 4px;
+    width: 85px;
+    background: #086AD8;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.development-text .bar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background: #ffffff;
+    animation: MOVE-BG 2s linear infinite;
+}
+
+@keyframes MOVE-BG {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(73px);
+    }
+}
+
+p {
+    margin-bottom: 1px;
+    line-height: 1.8;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}

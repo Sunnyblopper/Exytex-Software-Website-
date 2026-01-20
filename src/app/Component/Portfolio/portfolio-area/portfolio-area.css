@@ -1,0 +1,156 @@
+.audience-section {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.audience-content h3 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    color: #212121;
+    font-family: "Catamaran", sans-serif;
+    font-weight: bold;
+}
+
+.audience-content .bar {
+    height: 4px;
+    width: 85px;
+    background: #086AD8;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.audience-content .bar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background: #ffffff;
+    animation: MOVE-BG 2s linear infinite;
+}
+
+@keyframes MOVE-BG {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(73px);
+    }
+}
+
+p {
+    margin-bottom: 1px;
+    line-height: 1.8;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.audience-content li {
+    font-size: 16px;
+}
+
+.default-shape .shape-1 {
+    position: absolute;
+    right: 10%;
+    top: 16%;
+    z-index: -1;
+    animation: animationFramesOne 20s infinite linear;
+}
+
+.default-shape .shape-2 {
+    position: absolute;
+    left: 10%;
+    top: 16%;
+    z-index: -1;
+    animation: rotateMe 10s infinite linear;
+}
+
+@keyframes rotateMe {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.default-shape .shape-3 {
+    position: absolute;
+    left: 5%;
+    bottom: 25%;
+    z-index: -1;
+    animation: animationFramesOne 20s infinite linear;
+}
+
+.default-shape .shape-4 {
+    position: absolute;
+    right: 10%;
+    bottom: 25%;
+    z-index: -1;
+    animation: animationFramesOne 20s infinite linear;
+
+}
+
+.default-shape .shape-5 {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    z-index: -1;
+    animation: animationFramesOne 20s infinite linear;
+}
+
+@keyframes animationFramesOne {
+    0% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+
+    20% {
+        -webkit-transform: translate(73px, -1px) rotate(36deg);
+        transform: translate(73px, -1px) rotate(36deg);
+    }
+
+    40% {
+        -webkit-transform: translate(141px, 72px) rotate(72deg);
+        transform: translate(141px, 72px) rotate(72deg);
+    }
+
+    60% {
+        -webkit-transform: translate(83px, 122px) rotate(108deg);
+        transform: translate(83px, 122px) rotate(108deg);
+    }
+
+    80% {
+        -webkit-transform: translate(-40px, 72px) rotate(144deg);
+        transform: translate(-40px, 72px) rotate(144deg);
+    }
+
+    100% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}

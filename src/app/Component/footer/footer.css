@@ -1,0 +1,94 @@
+.footer-section {
+    background-color: #f5f3f3;
+}
+
+.pt-100 {
+    padding-top: 70px;
+}
+
+.pb-70 {
+    padding-bottom: 20px;
+}
+
+.single-footer-widget {
+    margin-bottom: 10px;
+}
+
+.single-footer-widget .footer-heading {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin-bottom: 1px;
+    line-height: 1.8;
+    color: #666666;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.single-footer-widget .footer-info-contact {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 16px;
+}
+
+.single-footer-widget .footer-info-contact:last-child {
+    margin-bottom: 0;
+}
+
+.single-footer-widget .footer-info-contact i {
+    position: absolute;
+    left: 0;
+    font-size: 25px;
+    color: #212529;
+}
+
+.single-footer-widget .footer-info-contact span {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+    color: #212121;
+}
+
+a:hover {
+    color: #0d6efd;
+}
+
+.flaticon-phone-call:before {
+    content: "\f118";
+}
+
+.flaticon-envelope:before {
+    content: "\f119";
+}
+
+.single-footer-widget .footer-social {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.single-footer-widget .footer-social li {
+    display: inline-block;
+    margin-right: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.single-footer-widget .footer-heading h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #212121;
+    font-family: "Catamaran", sans-serif;
+}

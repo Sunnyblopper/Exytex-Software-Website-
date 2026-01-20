@@ -1,0 +1,170 @@
+/* ===============================
+   Desktop Navbar
+================================= */
+
+.navbar-area {
+    font-family: "Open Sans", sans-serif;
+}
+
+.fria-responsive-nav {
+  display: none;
+}
+
+.fria-nav {
+  padding-top: 0;
+}
+
+.fria-nav .navbar {
+  transition: 0.5s;
+  padding: 0;
+}
+
+.fria-nav .navbar ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.fria-nav .navbar .navbar-nav {
+  margin-left: auto;
+}
+
+.fria-nav .navbar .navbar-nav .nav-item {
+  position: relative;
+  padding: 0;
+}
+
+.fria-nav .navbar .navbar-nav .nav-item > a {
+  font-size: 16px;
+  color: #212121;
+  text-transform: capitalize;
+  padding: 25px 0;
+  font-weight: 500;
+  margin: 0 14px;
+}
+
+.navbar-brand img {
+        max-width: 100%;
+    height: auto;
+}
+
+/* ===============================
+   Dropdown Menu
+================================= */
+
+.fria-nav .navbar .navbar-nav .nav-item .dropdown-menu {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  position: absolute;
+  border: none;
+  top: 80px;
+  left: 0;
+  width: 250px;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 0;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  padding: 20px 5px;
+}
+
+/* Hover Dropdown (Desktop) */
+.fria-nav .navbar .navbar-nav .nav-item:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+
+.fria-nav .navbar .navbar-nav .dropdown-menu li {
+  padding: 0;
+}
+
+.fria-nav .navbar .navbar-nav .dropdown-menu li a {
+  text-transform: capitalize;
+  padding: 8px 15px;
+  margin: 0;
+  color: #212121;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.fria-nav .navbar .navbar-nav .dropdown-menu li a:hover,
+.fria-nav .navbar .navbar-nav .dropdown-menu li a.active {
+  color: #086AD8;
+  letter-spacing: 1px;
+}
+
+/* ===============================
+   Right Button (Hire Us)
+================================= */
+
+.fria-nav .navbar .others-options {
+  margin-left: 30px;
+}
+
+.fria-nav .navbar .others-options .burger-menu {
+  background-color: transparent;
+  margin-left: 20px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+}
+
+/* ===============================
+   Bootstrap Overrides
+================================= */
+
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out,
+              background-color .15s ease-in-out,
+              border-color .15s ease-in-out;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* ===============================
+   Mobile Responsive
+================================= */
+
+@media (max-width: 991px) {
+
+  .fria-nav {
+    display: none;
+  }
+
+  .fria-responsive-nav {
+    display: block;
+  }
+
+  .fria-responsive-menu .logo img {
+    max-width: 180px;
+  }
+
+  .fria-nav .navbar .navbar-nav {
+    flex-direction: column;
+  }
+
+  .fria-nav .navbar .navbar-nav .nav-item a {
+    padding: 12px 15px;
+    margin: 0;
+  }
+
+  .fria-nav .navbar .navbar-nav .dropdown-menu {
+    position: relative;
+    top: 0;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    margin: 0;
+  }
+}

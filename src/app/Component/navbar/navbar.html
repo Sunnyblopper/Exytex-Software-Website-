@@ -1,0 +1,96 @@
+<div class="navbar-area">
+
+    <!-- Mobile / Responsive Navbar -->
+    <div class="fria-responsive-nav">
+        <div class="container">
+            <div class="fria-responsive-menu">
+                <div class="logo">
+                    <a routerLink="/">
+                        <img src="../../../../public/image/exytex-logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <div class="fria-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+
+                <a class="navbar-brand" routerLink="/">
+                    <img src="/image/exytex-logo.png" width="250" height="52" alt="logo">
+                </a>
+
+                <div class="collapse navbar-collapse mean-menu" [class.show]="menuOpen">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a routerLink="/" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <li class="nav-item">
+                                    <a routerLink="/mobile-apps" class="nav-link">Mobile Apps</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a routerLink="/digital-marketing" class="nav-link">Digital Marketing</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a routerLink="/web-development" class="nav-link">Web Development</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a routerLink="/seo-services" class="nav-link">SEO Services</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a routerLink="/graphic-designing" class="nav-link">Graphic Designing</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a routerLink="/amazon-services" class="nav-link">Amazon Services</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a routerLink="/blog" class="nav-link">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a routerLink="/our-portfolio" class="nav-link">Portfolio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a routerLink="/team" class="nav-link">Team</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a routerLink="/contact" class="nav-link">Contact</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="others-options">
+                        <div class="burger-menu">
+                            <a class="nav-link btn btn-primary" routerLink="/contact">
+                                Hire Us
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+</div>
