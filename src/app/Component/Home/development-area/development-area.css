@@ -9,7 +9,7 @@ img {
 }
 
 .development-text h1 {
-    font-family: "Catamaran", sans-serif
+    font-family: "Catamaran", sans-serif;
 }
 
 .development-text .bar {
@@ -37,6 +37,7 @@ img {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(73px);
     }
@@ -63,4 +64,252 @@ p {
 
 p:last-child {
     margin-bottom: 0;
+}
+
+/* Media Query 1: 1248px and below */
+@media (max-width: 1248px) {
+    .development-text h1 {
+        font-size: 200% !important;
+    }
+
+    .development-text .bar {
+        width: 80px;
+        margin-bottom: 14px;
+    }
+
+    @keyframes MOVE-BG {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(68px);
+        }
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+}
+
+/* Media Query 2: 992px and below */
+@media (max-width: 992px) {
+    .ptb-100 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .development-image {
+        margin-bottom: 30px;
+    }
+
+    .development-text h1 {
+        font-size: 180% !important;
+    }
+
+    .development-text .bar {
+        width: 75px;
+        margin-bottom: 14px;
+    }
+
+    @keyframes MOVE-BG {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(63px);
+        }
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+
+/* Media Query 3: 768px and below */
+@media (max-width: 768px) {
+    .ptb-100 {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .development-image {
+        margin-bottom: 25px;
+    }
+
+    .development-text h1 {
+        font-size: 170% !important;
+    }
+
+    .development-text .bar {
+        width: 70px;
+        height: 3.5px;
+        margin-bottom: 12px;
+    }
+
+    @keyframes MOVE-BG {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(58px);
+        }
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+/* Media Query 4: 576px and below */
+@media (max-width: 576px) {
+    .ptb-100 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .development-image {
+        margin-bottom: 20px;
+    }
+
+    .development-text h1 {
+        font-size: 160% !important;
+    }
+
+    .development-text .bar {
+        width: 65px;
+        height: 3.5px;
+        margin-bottom: 12px;
+    }
+
+    @keyframes MOVE-BG {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(53px);
+        }
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+}
+
+/* Media Query 5: 480px and below */
+@media (max-width: 480px) {
+    .ptb-100 {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .development-image {
+        margin-bottom: 18px;
+    }
+
+    .development-text h1 {
+        font-size: 150% !important;
+    }
+
+    .development-text .bar {
+        width: 60px;
+        height: 3px;
+        margin-bottom: 10px;
+    }
+
+    @keyframes MOVE-BG {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(48px);
+        }
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
+
+/* Media Query 6: 400px and below */
+@media (max-width: 400px) {
+    .ptb-100 {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+
+    .development-image {
+        margin-bottom: 15px;
+    }
+
+    .development-text h1 {
+        font-size: 140% !important;
+    }
+
+    .development-text .bar {
+        width: 55px;
+        height: 3px;
+        margin-bottom: 10px;
+    }
+
+    @keyframes MOVE-BG {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(43px);
+        }
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
+
+/* Media Query 7: 300px and below */
+@media (max-width: 300px) {
+    .ptb-100 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .development-image {
+        margin-bottom: 12px;
+    }
+
+    .development-text h1 {
+        font-size: 130% !important;
+    }
+
+    .development-text .bar {
+        width: 50px;
+        height: 3px;
+        margin-bottom: 8px;
+    }
+
+    @keyframes MOVE-BG {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(38px);
+        }
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
 }

@@ -88,3 +88,109 @@
 .page-title-content ul li a:hover {
     color: #086AD8;
 }
+
+
+
+
+/* 1. ≤1248px */
+@media (max-width: 1248px) {
+    .page-title-content h1 {
+        font-size: 36px;
+    }
+}
+
+/* 2. ≤1024px */
+@media (max-width: 1024px) {
+    .page-title-area {
+        height: 350px;
+    }
+    .page-title-content h1 {
+        font-size: 32px;
+    }
+    .page-title-content ul li {
+        font-size: 16px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+/* 3. ≤900px */
+@media (max-width: 900px) {
+    .page-title-area {
+        height: 320px;
+    }
+    .page-title-content h1 {
+        font-size: 28px;
+    }
+    .page-title-content ul li {
+        font-size: 15px;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+}
+
+/* 4. ≤768px */
+@media (max-width: 768px) {
+    .page-title-area {
+        height: 280px;
+    }
+    .page-title-content h1 {
+        font-size: 26px;
+    }
+    .page-title-content ul {
+        margin-top: 14px;
+    }
+    .page-title-content ul li {
+        font-size: 14px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+/* 5. ≤600px */
+@media (max-width: 600px) {
+    .page-title-area {
+        height: 240px;
+    }
+    .page-title-content h1 {
+        font-size: 22px;
+    }
+    .page-title-content ul li {
+        font-size: 13px;
+    }
+}
+
+/* 6. ≤480px */
+@media (max-width: 480px) {
+    .page-title-area {
+        height: 200px;
+        padding: 0 10px;
+    }
+    .page-title-content h1 {
+        font-size: 20px;
+    }
+    .page-title-content ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .page-title-content ul li {
+        font-size: 12px;
+        margin: 3px 6px;
+    }
+}
+
+/* 7. ≤300px */
+@media (max-width: 300px) {
+    .page-title-area {
+        height: 180px;
+    }
+    .page-title-content h1 {
+        font-size: 18px;
+    }
+    .page-title-content ul li {
+        font-size: 11px;
+        margin: 2px 4px;
+    }
+}

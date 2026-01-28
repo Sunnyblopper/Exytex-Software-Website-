@@ -1,22 +1,44 @@
-/* ===============================
-   Desktop Navbar
-================================= */
-
-.navbar-area {
-    font-family: "Open Sans", sans-serif;
-}
-
-.fria-responsive-nav {
-  display: none;
-}
-
 .fria-nav {
   padding-top: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 .fria-nav .navbar {
   transition: 0.5s;
   padding: 0;
+}
+
+.navbar-light .navbar-brand {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.navbar-brand {
+  padding: .3125rem 0;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.navbar-collapse {
+  align-items: center;
+  width: 100%;
+}
+
+.fria-nav .navbar .navbar-nav {
+  margin-left: auto;
 }
 
 .fria-nav .navbar ul {
@@ -25,79 +47,82 @@
   margin-bottom: 0;
 }
 
-.fria-nav .navbar .navbar-nav {
-  margin-left: auto;
-}
-
 .fria-nav .navbar .navbar-nav .nav-item {
   position: relative;
   padding: 0;
 }
 
-.fria-nav .navbar .navbar-nav .nav-item > a {
+.fria-nav .navbar .navbar-nav .nav-item:first-child a {
+  margin-left: 0;
+}
+
+.fria-nav .navbar .navbar-nav .nav-item>a {
   font-size: 16px;
   color: #212121;
   text-transform: capitalize;
   padding: 25px 0;
   font-weight: 500;
   margin: 0 14px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-.navbar-brand img {
-        max-width: 100%;
-    height: auto;
+.fria-nav .navbar .navbar-nav .nav-item>a:hover {
+  color: #0d6efd;
 }
 
-/* ===============================
-   Dropdown Menu
-================================= */
+.fria-nav .navbar .navbar-nav .nav-item.dropdown>a::after {
+  content: none;
+  font-size: 10px;
+  margin-left: 6px;
+  transition: 0.3s;
+}
 
 .fria-nav .navbar .navbar-nav .nav-item .dropdown-menu {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  background: #ffffff;
+  background: #fff;
   position: absolute;
-  border: none;
-  top: 80px;
+  top: 72px;
   left: 0;
   width: 250px;
   z-index: 99;
+  border: none;
+  display: block;
   opacity: 0;
   visibility: hidden;
   border-radius: 0;
   transition: all 0.3s ease-in-out;
-  margin-top: 20px;
   padding: 20px 5px;
+  transform: translateY(10px);
 }
 
-/* Hover Dropdown (Desktop) */
-.fria-nav .navbar .navbar-nav .nav-item:hover .dropdown-menu {
+.fria-nav .navbar .navbar-nav .nav-item:hover>.dropdown-menu {
   opacity: 1;
   visibility: visible;
-  margin-top: 0;
+  transform: translateY(0);
 }
 
-.fria-nav .navbar .navbar-nav .dropdown-menu li {
+.fria-nav .navbar .navbar-nav .nav-item .dropdown-menu li {
   padding: 0;
 }
 
-.fria-nav .navbar .navbar-nav .dropdown-menu li a {
+.fria-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
   text-transform: capitalize;
   padding: 8px 15px;
   margin: 0;
   color: #212121;
   font-size: 15px;
   font-weight: 400;
+  transition: 0.35s;
+  letter-spacing: 0;
+
+
 }
 
-.fria-nav .navbar .navbar-nav .dropdown-menu li a:hover,
-.fria-nav .navbar .navbar-nav .dropdown-menu li a.active {
-  color: #086AD8;
+.fria-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover {
+  color: #0d6efd;
   letter-spacing: 1px;
 }
-
-/* ===============================
-   Right Button (Hire Us)
-================================= */
 
 .fria-nav .navbar .others-options {
   margin-left: 30px;
@@ -105,66 +130,125 @@
 
 .fria-nav .navbar .others-options .burger-menu {
   background-color: transparent;
-  margin-left: 20px;
+  margin-left: 15px;
   cursor: pointer;
   display: inline-block;
   position: relative;
   top: 1px;
 }
 
-/* ===============================
-   Bootstrap Overrides
-================================= */
-
-.nav-link {
+.btn-primary {
   display: block;
   padding: .5rem 1rem;
   text-decoration: none;
-  transition: color .15s ease-in-out,
-              background-color .15s ease-in-out,
-              border-color .15s ease-in-out;
-}
-
-.btn-primary {
+  transition: 0.3s;
   color: #fff;
   background-color: #0d6efd;
-  border-color: #0d6efd;
+  border: 1px solid #0d6efd;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1rem;
+  border-radius: .25rem;
 }
 
-/* ===============================
-   Mobile Responsive
-================================= */
+.btn-primary:hover {
+  background-color: #084298;
+  border-color: #084298;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  font-weight: bold;
+  color: #212121;
+  cursor: pointer;
+  padding: 5px;
+  line-height: 1;
+}
+
+/* Hover optional */
+.menu-toggle:hover {
+  color: #0d6efd;
+}
+
 
 @media (max-width: 991px) {
 
-  .fria-nav {
+  .navbar-collapse {
+    display: none;
+    width: 100%;
+    background: #ffffff;
+    padding: 15px;
+  }
+
+  .fria-nav .navbar .others-options {
     display: none;
   }
 
-  .fria-responsive-nav {
+  /* Show menu ONLY when toggle clicked */
+  .navbar-collapse.show {
     display: block;
   }
 
-  .fria-responsive-menu .logo img {
-    max-width: 180px;
+  /* Vertical menu */
+  .fria-nav .navbar .navbar-nav {
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0;
   }
 
+  .fria-nav .navbar .navbar-nav .nav-item>a {
+    padding: 12px 12px;
+    margin: 0;
+    /* border-bottom: 1px solid #eee; */
+  }
+
+  /* Disable hover dropdown */
+  .fria-nav .navbar .navbar-nav .nav-item:hover>.dropdown-menu {
+    padding: 12px 0px;
+    /* margin: 0; */
+    border-bottom: 1px solid #eee;
+  }
+
+  /* Mobile dropdown */
+  .fria-nav .navbar .navbar-nav .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    padding: 10px 0;
+    display: none;
+  }
+
+  /* Open dropdown on click */
+  .nav-item.dropdown.show>.dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
   .fria-nav .navbar .navbar-nav {
     flex-direction: column;
-  }
-
-  .fria-nav .navbar .navbar-nav .nav-item a {
-    padding: 12px 15px;
-    margin: 0;
-  }
-
-  .fria-nav .navbar .navbar-nav .dropdown-menu {
-    position: relative;
-    top: 0;
     width: 100%;
-    opacity: 1;
-    visibility: visible;
-    box-shadow: none;
-    margin: 0;
+    margin-left: 0;
+  }
+
+  .fria-nav .navbar .navbar-nav .nav-item>a {
+    padding: 12px 0px;
+    /* margin: 0; */
+    border-bottom: 1px solid #eee;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 576px) {
+
+  .navbar-brand img {
+    width: 180px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+    padding: 10px;
   }
 }

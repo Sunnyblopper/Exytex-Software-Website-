@@ -1,3 +1,31 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from './Pages/home';
+import { BlogComponent } from './Pages/blog';
+import { ServiceComponent } from './Pages/service';
+import { PortfolioComponent } from './Pages/portfolio';
+import { TeamComponent } from './Pages/team';
+import { ContactComponent } from './Pages/contact';
+import { MobileAppsComponent } from './Pages/mobile-apps';
+import { DigitalMarketingComponent } from './Pages/digital-marketing';
+import { WebDevelopmentComponent } from './Pages/web-development';
+import { SeoServicesComponent } from './Pages/seo-services';
+import { GraphicDesigningComponent } from './Pages/graphic-designing';
+import { AmazonServicesComponent } from './Pages/amazon-services';
+import { ErpServicesComponent } from './Pages/erp.services';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'service', component: ServiceComponent },
+  { path: 'our-portfolio', component: PortfolioComponent },
+  { path: 'team', component: TeamComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'mobile-apps', component: MobileAppsComponent },
+  { path: 'digital-marketing', component: DigitalMarketingComponent },
+  { path: 'web-development', component: WebDevelopmentComponent },
+  { path: 'seo-services', component: SeoServicesComponent },
+  { path: 'graphic-designing', component: GraphicDesigningComponent },
+  { path: 'amazon-services', component: AmazonServicesComponent },
+  { path: 'erp-services', component: ErpServicesComponent },
+  { path: '**', redirectTo: '' }
+];

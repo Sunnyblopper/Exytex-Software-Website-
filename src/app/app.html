@@ -1,23 +1,7 @@
-<!-- <app-navbar></app-navbar> -->
- <!-- <app-development-area></app-development-area>
-<app-service-area></app-service-area>
- <app-choose-area></app-choose-area>
- <app-choose-area1></app-choose-area1>
- <app-counter-area></app-counter-area>
- <app-project-area></app-project-area>
- <app-choose-area2></app-choose-area2>
- <app-choose-area3></app-choose-area3>
- <app-footer></app-footer>
- <app-copyright-area></app-copyright-area> -->
+<app-navbar (hireClick)="sideSlide.open()"></app-navbar>
+<app-side-slide #sideSlide></app-side-slide>
 
- <!-- <app-portfolio-slider></app-portfolio-slider>
- <app-portfolio-area></app-portfolio-area>
- <app-portfolio-audience></app-portfolio-audience> -->
+<router-outlet></router-outlet>
 
- <!-- <app-team-slider></app-team-slider>
- <app-team-tech-area></app-team-tech-area>
- <app-team-about-compony-area></app-team-about-compony-area> -->
-
- <app-contact-slider></app-contact-slider>
- <app-contact-map></app-contact-map>
- <app-contact-area></app-contact-area>
+<app-footer></app-footer>
+<app-copyright-area></app-copyright-area>

@@ -1,0 +1,352 @@
+.sidebar-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar-modal {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.sidebar-modal.active .sidebar-modal-inner {
+    right: 0;
+}
+
+.sidebar-modal .sidebar-modal-inner {
+    position: absolute;
+    right: -100%;
+    top: 0;
+    width: 30%;
+    overflow-y: scroll;
+    height: 100%;
+    background-color: #ffffff;
+    transition: .7s;
+    z-index: 1;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.sidebar-modal .sidebar-about-area {
+    margin-bottom: 40px;
+}
+
+.sidebar-modal .sidebar-about-area .title h2 {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+
+.sidebar-modal .sidebar-about-area .title p {
+    margin-top: 15px;
+    font-size: 15.2px;
+    line-height: 1.8;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 1px;
+    line-height: 1.8;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.sidebar-modal .sidebar-contact-feed {
+    margin-bottom: 40px;
+}
+
+.sidebar-modal .sidebar-contact-feed h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+
+.sidebar-modal .sidebar-modal-inner .contact-form {
+    padding: 0;
+    box-shadow: unset;
+    background-color: unset;
+}
+
+.contact-form {
+    border-radius: 5px;
+}
+
+.contact-form form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form form .form-control {
+    height: 55px;
+    padding: 0 15px;
+    line-height: initial;
+    color: #212121;
+    background-color: #f8f6f6;
+    border: 1px solid #f8f6f6;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: unset !important;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sidebar-modal .form-control::placeholder {
+    color: #999999;
+    opacity: 1;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.sidebar-modal .form-control {
+    margin-bottom: 15px;
+}
+
+.contact-form form textarea.form-control {
+    height: auto !important;
+    padding-top: 15px;
+}
+
+.sidebar-modal select.form-control {
+    font-size: 16px;
+    color: #212121;
+    font-family: "Open Sans", sans-serif;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+}
+
+.sidebar-modal select.form-control option {
+    font-size: 16px;
+}
+
+.sidebar-modal select.form-control option:first-child {
+    color: #999999;
+}
+
+.contact-form .send-btn {
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.sidebar-modal .send-btn-one {
+    display: inline-block;
+    padding: 14px 35px;
+    background-color: #086AD8;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 2px;
+    transition: 0.5s;
+    border: none;
+}
+
+.sidebar-modal .send-btn-one:hover {
+    background-color: #10dce8;
+}
+
+.sidebar-contact-area .contact-info-content {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.phone-numbers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.phone-numbers a {
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+
+.primary-number {
+    color: #086AD8;
+}
+
+.primary-number:hover {
+    color: #212121;
+}
+
+.secondary-number {
+    color: #212121;
+}
+
+.secondary-number:hover {
+    color: #086AD8;
+}
+
+.footer-info-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+
+.footer-info-contact i {
+    font-size: 18px;
+    color: #000;
+}
+
+.contact-info-content .footer-info-contact a {
+    display: block;
+    color: #086AD8;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+}
+
+.contact-info-content .footer-info-contact a:hover {
+    color: #000;
+    transition: 0.3s;
+}
+
+ .contact-info-content .social {
+    padding-left: 0;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+ .contact-info-content .social li {
+    display: inline-block;
+    margin: 0 1px;
+    padding-left: 0;
+}
+
+.contact-info-content .social li a {
+    width: 35px;
+    height: 35px;
+    line-height: 34px;
+    border: 1px solid #dadada;
+    border-radius: 50%;
+    color: #aba5a5;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.contact-info-content .social li a i {
+    font-size: 14px;
+}
+
+.contact-info-content .social li a:hover {
+    background-color: #086AD8;
+    color: white;
+}
+
+.close-btn img {
+    display: inline-block;
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+
+}
+
+/* Large screens 1248px - 992px */
+@media (max-width: 1248px) {
+    .sidebar-modal .sidebar-modal-inner {
+        width: 35%;
+        padding: 70px 25px 30px 25px;
+    }
+}
+
+/* Medium screens 991px - 768px */
+@media (max-width: 991px) {
+    .sidebar-modal .sidebar-modal-inner {
+        width: 50%;
+        padding: 60px 20px 30px 20px;
+    }
+
+    .sidebar-modal .sidebar-about-area .title h2,
+    .sidebar-modal .sidebar-contact-feed h2 {
+        font-size: 22px;
+    }
+
+    .contact-form form .form-control {
+        font-size: 13px;
+        height: 50px;
+    }
+}
+
+/* Small screens 767px - 480px */
+@media (max-width: 767px) {
+    .sidebar-modal .sidebar-modal-inner {
+        width: 70%;
+        padding: 50px 15px 25px 15px;
+    }
+
+    .sidebar-modal .sidebar-about-area .title h2,
+    .sidebar-modal .sidebar-contact-feed h2 {
+        font-size: 20px;
+    }
+
+    .contact-form form .form-control {
+        font-size: 12px;
+        height: 45px;
+    }
+}
+
+/* Extra small screens 479px - 300px */
+@media (max-width: 479px) {
+    .sidebar-modal .sidebar-modal-inner {
+        width: 90%;
+        padding: 40px 10px 20px 10px;
+    }
+
+    .sidebar-modal .sidebar-about-area .title h2,
+    .sidebar-modal .sidebar-contact-feed h2 {
+        font-size: 18px;
+    }
+
+    .contact-form form .form-control {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .send-btn-one {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    .close-btn img {
+        right: 20px;
+        top: 15px;
+        width: 18px;
+        height: 18px;
+    }
+}

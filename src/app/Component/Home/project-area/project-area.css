@@ -1,6 +1,7 @@
 .pb-100 {
     padding-bottom: 70px;
 }
+
 .pt-100 {
     padding-top: 70px;
 }
@@ -66,9 +67,10 @@ a:hover {
 }
 
 @keyframes MOVE-BG {
-     0% {
+    0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(73px);
     }
@@ -83,7 +85,7 @@ a:hover {
 }
 
 .single-projects {
-     position: relative;
+    position: relative;
     margin-bottom: 30px;
     text-align: center;
     overflow: hidden;
@@ -91,13 +93,14 @@ a:hover {
 }
 
 .single-projects::before {
-   content: '';
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(8, 106, 216, 0.7); /* semi-transparent so image still shows */
+    background: rgba(8, 106, 216, 0.7);
+    /* semi-transparent so image still shows */
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
@@ -156,4 +159,91 @@ img {
     opacity: 1;
     visibility: visible;
     transform: translateY(-50%);
+}
+
+@media (max-width: 1248px) {
+    .section-title h2 {
+        font-size: 44px;
+    }
+
+    .projects-content h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-title h2 {
+        font-size: 40px;
+    }
+
+    .section-title p {
+        font-size: 15px;
+    }
+
+    .projects-content h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-title h2 {
+        font-size: 36px;
+    }
+
+    .projects-content span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .projects-content {
+        top: 50%;
+    }
+
+    .projects-content h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .section-title p {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .projects-content span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .projects-content h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 300px) {
+    .section-title h2 {
+        font-size: 20px;
+    }
+
+    .projects-content h3 {
+        font-size: 15px;
+    }
+
+    .projects-content span {
+        font-size: 13px;
+    }
 }

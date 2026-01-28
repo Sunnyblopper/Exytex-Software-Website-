@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Slider } from './slider';
+import { SeoFaqArea } from './seo-faq-area';
 
-describe('Slider', () => {
-  let component: Slider;
-  let fixture: ComponentFixture<Slider>;
+describe('SeoFaqArea', () => {
+  let component: SeoFaqArea;
+  let fixture: ComponentFixture<SeoFaqArea>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Slider]
+      imports: [SeoFaqArea]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Slider);
+    fixture = TestBed.createComponent(SeoFaqArea);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

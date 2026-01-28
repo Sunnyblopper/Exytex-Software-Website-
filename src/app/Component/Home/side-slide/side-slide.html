@@ -1,0 +1,96 @@
+<div class="sidebar-modal" [class.active]="isOpen">
+    <div class="sidebar-modal-inner">
+
+        <div class="sidebar-about-area">
+            <div class="title">
+                <h2>About Us</h2>
+                <p>
+                    We believe brand interaction is key in communication. Real innovations and a positive customer
+                    experience are the heart of successful communication. No fake products and services. The customer is
+                    king, their lives and needs are the inspiration.
+                </p>
+            </div>
+        </div>
+
+        <div class="sidebar-contact-feed">
+            <h2>Contact</h2>
+
+            <div class="contact-form">
+                <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+
+                    <div class="row">
+
+                        <div class="col-lg-12">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required
+                                [(ngModel)]="formData.name">
+                        </div>
+
+                        <div class="col-lg-12">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required
+                                [(ngModel)]="formData.email">
+                        </div>
+
+                        <div class="col-lg-12">
+                            <input type="text" name="subject" class="form-control" placeholder="Your Subject" required
+                                [(ngModel)]="formData.subject">
+                        </div>
+
+                        <div class="col-lg-12">
+                            <select name="service" class="form-control" required [(ngModel)]="formData.service">
+                                <option value="">Open This To Select Service</option>
+                                <option>Mobile App</option>
+                                <option>Digital Marketing</option>
+                                <option>Web Development</option>
+                                <option>SEO Services</option>
+                                <option>Graphic Designing</option>
+                                <option>Amazon Service</option>
+                                <option>Shopify</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <textarea name="message" class="form-control" rows="6" placeholder="Your Message" required
+                                [(ngModel)]="formData.message">
+              </textarea>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <button type="submit" class="send-btn-one">
+                                Send Message
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="sidebar-contact-area">
+            <div class="contact-info-content">
+
+                <h2 class="phone-numbers">
+                    <a href="tel:+923095930315" class="primary-number">+923095930315</a>
+                    <a href="tel:+447596341265" class="secondary-number">+447596341265</a>
+                </h2>
+
+                <div class="footer-info-contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:Info@exytex.com">info@exytex.com</a>
+                </div>
+
+                <ul class="social">
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <span class="close-btn" (click)="close()">
+            <img src="/image/close.png" alt="">
+        </span>
+
+    </div>
+</div>

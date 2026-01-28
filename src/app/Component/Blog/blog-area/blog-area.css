@@ -47,9 +47,10 @@
 }
 
 @keyframes MOVE-BG {
-     0% {
+    0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(73px);
     }
@@ -116,4 +117,145 @@ p {
 .single-blog .content .read-more {
     font-size: 15px;
     font-weight: 600;
+}
+
+@media (max-width: 1248px) {
+    .section-title h2 {
+        font-size: 44px;
+    }
+
+    .single-blog .content h3 {
+        font-size: 20px;
+    }
+
+    .single-blog .content .read-more {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .section-title h2 {
+        font-size: 40px;
+    }
+
+    .single-blog .content h3 {
+        font-size: 19px;
+    }
+
+    .single-blog .content .read-more {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-title h2 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .pb-100 {
+        padding-bottom: 70px;
+    }
+
+    .pt-100 {
+        padding-top: 60px;
+    }
+
+    .single-blog .content h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .section-title .bar {
+        width: 70px;
+    }
+
+    .single-blog .content h3 {
+        font-size: 17px;
+    }
+
+    .single-blog .content span {
+        font-size: 13px;
+    }
+
+    .single-blog .content .read-more {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .pb-100 {
+        padding-bottom: 60px;
+    }
+
+    .pt-100 {
+        padding-top: 50px;
+    }
+
+    .single-blog .content h3 {
+        font-size: 16px;
+    }
+
+    .single-blog .content span {
+        font-size: 12px;
+    }
+
+    .single-blog .content .read-more {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .section-title .bar {
+        width: 60px;
+        height: 3px;
+    }
+
+    .single-blog .content h3 {
+        font-size: 15px;
+    }
+
+    .single-blog .content span {
+        font-size: 11px;
+    }
+
+    .single-blog .content .read-more {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 300px) {
+    .section-title h2 {
+        font-size: 20px;
+    }
+
+    .section-title .bar {
+        width: 50px;
+        height: 3px;
+    }
+
+    .single-blog .content h3 {
+        font-size: 14px;
+    }
+
+    .single-blog .content span {
+        font-size: 10px;
+    }
+
+    .single-blog .content .read-more {
+        font-size: 10px;
+    }
 }

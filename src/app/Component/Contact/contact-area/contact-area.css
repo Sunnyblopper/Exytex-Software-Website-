@@ -94,3 +94,110 @@ img {
 .default-btn:hover {
     background-color: #10dce8;
 }
+
+@media (max-width: 1248px) {
+    .contact-text h3 {
+        font-size: 30px;
+    }
+
+    .contact-form {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact-section .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contact-image {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .contact-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .contact-text {
+        text-align: center;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-text h3 {
+        font-size: 26px;
+    }
+
+    .contact-form {
+        margin-bottom: 30px;
+    }
+
+    .contact-image {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-text h3 {
+        font-size: 24px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form form .form-control {
+        height: 48px;
+        font-size: 13px;
+    }
+
+    .default-btn {
+        font-size: 15px;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-text h3 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .contact-form {
+        padding: 18px;
+    }
+
+    .contact-form form label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 300px) {
+    .contact-text h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    .default-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

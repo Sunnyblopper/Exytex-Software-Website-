@@ -1,1 +1,17 @@
-<p>slider works!</p>
+<swiper-container #heroSwiper init="false" class="hero-swiper">
+    @for (slide of slides; track slide.title) {
+    <swiper-slide>
+        <div class="hero-item" [style.background-image]="'url(' + slide.image + ')'">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>{{ slide.title }}</h1>
+                    <p class="animate-slide">{{ slide.description }}</p>
+                    <div class="hero-btns animate-slide">
+                        <a routerLink="/services" class="btn btn-primary">Get Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </swiper-slide>
+    }
+</swiper-container>

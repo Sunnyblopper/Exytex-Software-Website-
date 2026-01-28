@@ -1,0 +1,268 @@
+.ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 50px;
+    margin: 0 0 12px 0;
+    position: relative;
+    line-height: 1;
+    color: #212121;
+    font-family: "Catamaran", sans-serif;
+    font-weight: bold;
+}
+
+.section-title .bar {
+    height: 4px;
+    width: 85px;
+    background: #086AD8;
+    margin: 20px auto 0;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.section-title .bar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background: #ffffff;
+    animation: MOVE-BG 2s linear infinite;
+}
+
+@keyframes MOVE-BG {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(73px);
+    }
+}
+
+p {
+    margin-bottom: 1px;
+    line-height: 1.8;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.choose-content {
+    position: relative;
+    margin-top: 40px;
+    padding: 25px 40px 25px 120px;
+    background-color: #f5f9fd;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.choose-content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #086AD8;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.choose-content:hover::before {
+    width: 100%;
+}
+
+.choose-content .icon {
+    position: absolute;
+    left: 30px;
+    top: 26px;
+    transition: 0.5s;
+}
+
+.choose-content .icon i {
+     display: inline-block;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    background-color: #086AD8;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 32px;
+    transition: all 0.5s ease;
+}
+
+.choose-content h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #212121;
+    font-family: "Catamaran", sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.choose-content:hover h3,
+.choose-content:hover p {
+    color: #ffffff;
+}
+
+/* Hover Icon */
+.choose-content:hover .icon i {
+    background-color: #ffffff;
+    color: #086AD8;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+    color: #212121;
+}
+
+.choose-content p a:hover {
+    color: #086AD8;
+}
+
+h3 {
+    color: #212121;
+    font-family: "Catamaran", sans-serif;
+    font-weight: bold;
+}
+
+.cross-platform .highlight {
+    color: rgb(37, 148, 233);
+}
+
+
+/* ================================
+   1) ≤1248px
+================================ */
+@media (max-width: 1248px) {
+    .section-title h2 {
+        font-size: 44px;
+    }
+
+    .choose-content {
+        padding: 20px 35px 20px 110px;
+    }
+}
+
+/* ================================
+   2) ≤1024px
+================================ */
+@media (max-width: 1024px) {
+    .section-title h2 {
+        font-size: 40px;
+    }
+
+    .choose-content {
+        padding: 20px 30px 20px 105px;
+    }
+
+    p {
+        font-size: 15.5px;
+    }
+}
+
+/* ================================
+   3) ≤900px
+================================ */
+@media (max-width: 900px) {
+    .section-title h2 {
+        font-size: 36px;
+    }
+
+    .choose-content h3 {
+        font-size: 21px;
+    }
+}
+
+/* ================================
+   4) ≤780px
+================================ */
+@media (max-width: 780px) {
+    .section-title h2 {
+        font-size: 34px;
+    }
+
+    .choose-content {
+        padding: 18px 28px 18px 120px;
+    }
+}
+
+/* ================================
+   5) ≤600px
+================================ */
+@media (max-width: 600px) {
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .choose-content h3 {
+        font-size: 20px;
+    }
+}
+
+/* ================================
+   6) ≤450px
+================================ */
+@media (max-width: 450px) {
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    .choose-content {
+        padding: 16px 24px 16px 125px;
+    }
+
+    p {
+        font-size: 14.5px;
+    }
+}
+
+/* ================================
+   7) ≤300px
+================================ */
+@media (max-width: 300px) {
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .choose-content h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .choose-content {
+        padding: 15px 20px 15px 90px;
+    }
+}

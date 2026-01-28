@@ -1,0 +1,261 @@
+.ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 50px;
+    margin: 0 0 12px 0;
+    position: relative;
+    line-height: 1;
+    color: #212121;
+    text-transform: capitalize;
+    font-family: "Catamaran", sans-serif;
+    font-weight: bold;
+}
+
+.section-title .bar {
+    height: 4px;
+    width: 85px;
+    background: #086AD8;
+    margin: 20px auto 0;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.section-title .bar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background: #ffffff;
+    animation: MOVE-BG 2s linear infinite;
+}
+
+@keyframes MOVE-BG {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(73px);
+    }
+}
+
+p {
+    margin-bottom: 1px;
+    line-height: 1.8;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.development-text .dev-title {
+    font-size: 220%;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: "Catamaran", sans-serif;
+}
+
+.development-text .bar {
+    height: 4px;
+    width: 85px;
+    background: #086AD8;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.development-text .bar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background: #ffffff;
+    animation: MOVE-BG 2s linear infinite;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h4 {
+    color: #212121;
+    text-transform: capitalize;
+    font-family: "Catamaran", sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    color: #212121;
+    text-transform: capitalize;
+    font-family: "Catamaran", sans-serif;
+    font-weight: bold;
+}
+
+/* Screens below 1248px */
+@media (max-width: 1248px) {
+    .section-title h2 {
+        font-size: 44px;
+    }
+
+    .ptb-100 {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+}
+
+/* Screens below 1100px */
+@media (max-width: 1100px) {
+    .section-title h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .development-text .dev-title {
+        font-size: 200%;
+    }
+}
+
+/* Screens below 992px (Tablets) */
+@media (max-width: 992px) {
+    .section-title h2 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .development-text .dev-title {
+        font-size: 180%;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .ptb-100 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+/* Screens below 768px (Small tablets & large phones) */
+@media (max-width: 768px) {
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .development-text .dev-title {
+        font-size: 160%;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .section-title .bar,
+    .development-text .bar {
+        width: 70px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+/* Screens below 576px (Mobile) */
+@media (max-width: 576px) {
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .development-text .dev-title {
+        font-size: 150%;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .ptb-100 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+/* Screens below 400px (Small phones) */
+@media (max-width: 400px) {
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .development-text .dev-title {
+        font-size: 140%;
+    }
+
+    h4 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .section-title .bar,
+    .development-text .bar {
+        width: 60px;
+        height: 3px;
+    }
+}
+
+/* Screens below 300px (Very small devices) */
+@media (max-width: 300px) {
+    .section-title h2 {
+        font-size: 20px;
+    }
+
+    .development-text .dev-title {
+        font-size: 120%;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .section-title .bar,
+    .development-text .bar {
+        width: 50px;
+        height: 2px;
+    }
+}
