@@ -4,8 +4,11 @@
     <div class="section-title">
       <h2>Projects</h2>
       <p>
-        Exytex Technologies bring forth advance software products. This Software house not only improvise in their tasks but also foster learning. Synergy of senior team persons with the new ones is the act of achieving better result in any sort of project. Exytex makes use of web development, web analysis,
-        <a href="https://www.exytex.com/mobile-apps/">mobile app development</a>, iOS app development, digital marketing, graphic designing and android app development. The way Exytex sustain their reputation is unbelievable and astonishing.
+        Exytex Technologies bring forth advance software products. This Software house not only improvise in their tasks
+        but also foster learning. Synergy of senior team persons with the new ones is the act of achieving better result
+        in any sort of project. Exytex makes use of web development, web analysis,
+        <a routerLink="/mobile-apps">mobile app development</a>, iOS app development, digital marketing, graphic
+        designing and android app development. The way Exytex sustain their reputation is unbelievable and astonishing.
       </p>
       <div class="bar"></div>
     </div>
@@ -15,13 +18,15 @@
       <div class="col-lg-3 p-0" *ngFor="let project of projects">
         <div class="single-projects two">
           <div class="projects-image">
-            <img [src]="project.image" [alt]="project.title">
+            <a [routerLink]="['/portfolio-item', extractSlug(project.url)]">
+              <img [src]="project.image" [alt]="project.title">
+            </a>
           </div>
           <div class="projects-content">
-            <a [href]="project.link">
+            <a [routerLink]="['/portfolio-item', extractSlug(project.url)]">
               <h3>{{ project.title }}</h3>
             </a>
-            <a [href]="project.link">
+            <a [routerLink]="['/portfolio-item', extractSlug(project.url)]">
               <span>{{ project.category }}</span>
             </a>
           </div>
@@ -30,4 +35,3 @@
     </div>
   </div>
 </section>
-

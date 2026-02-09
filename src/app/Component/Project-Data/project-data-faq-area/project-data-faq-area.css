@@ -1,0 +1,95 @@
+.ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.project-details-image {
+    margin-bottom: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.projects-details-desc {
+    margin-top: 5px;
+}
+
+.projects-details-desc h3 {
+    margin-bottom: 13px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #212121;
+    text-transform: capitalize;
+    font-family: "Catamaran", sans-serif;
+}
+
+.projects-details-desc h2 {
+    text-transform: capitalize;
+    font-family: "Catamaran", sans-serif;
+    font-weight: bold;
+}
+
+.projects-details-desc p {
+    margin-bottom: 1px;
+    line-height: 1.8;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.projects-details-desc .project-details-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 35px;
+}
+
+.projects-details-desc .project-details-info .single-info-box {
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.projects-details-desc .project-details-info .single-info-box h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #212121;
+    text-transform: capitalize;
+    font-family: "Catamaran", sans-serif;
+}
+
+.projects-details-desc .project-details-info .single-info-box span {
+    display: block;
+    color: #6a6c72;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.default-btn {
+    display: inline-block;
+    padding: 14px 35px;
+    background-color: #086AD8;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 2px;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+    color: #212121;
+}
+
+a:hover {
+    background-color: #0fd3e7;
+    transition: 0.5s;
+
+}

@@ -16,42 +16,65 @@
             <h2>Contact</h2>
 
             <div class="contact-form">
-                <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+                <form [formGroup]="sideForm" (ngSubmit)="onSubmit()">
 
                     <div class="row">
 
                         <div class="col-lg-12">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name" required
-                                [(ngModel)]="formData.name">
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" formControlName="name">
+                                <small *ngIf="submitted && sideForm.get('name')?.errors" class="text-danger">
+                                    Name is required
+                                </small>
+                            </div>
                         </div>
 
                         <div class="col-lg-12">
-                            <input type="email" name="email" class="form-control" placeholder="Your Email" required
-                                [(ngModel)]="formData.email">
+                            <div class="form-group mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email"
+                                    formControlName="email">
+                                <small *ngIf="submitted && sideForm.get('email')?.errors" class="text-danger">
+                                    Valid email is required
+                                </small>
+                            </div>
                         </div>
 
                         <div class="col-lg-12">
-                            <input type="text" name="subject" class="form-control" placeholder="Your Subject" required
-                                [(ngModel)]="formData.subject">
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" placeholder="Your Subject"
+                                    formControlName="subject">
+                                <small *ngIf="submitted && sideForm.get('subject')?.errors" class="text-danger">
+                                    Subject is required
+                                </small>
+                            </div>
                         </div>
 
                         <div class="col-lg-12">
-                            <select name="service" class="form-control" required [(ngModel)]="formData.service">
-                                <option value="">Open This To Select Service</option>
-                                <option>Mobile App</option>
-                                <option>Digital Marketing</option>
-                                <option>Web Development</option>
-                                <option>SEO Services</option>
-                                <option>Graphic Designing</option>
-                                <option>Amazon Service</option>
-                                <option>Shopify</option>
-                            </select>
+                            <div class="form-group mb-3">
+                                <select class="form-control" formControlName="position">
+                                    <option value="">Open This To Select Service</option>
+                                    <option>Mobile App</option>
+                                    <option>Digital Marketing</option>
+                                    <option>Web Development</option>
+                                    <option>SEO Services</option>
+                                    <option>Graphic Designing</option>
+                                    <option>Amazon Service</option>
+                                    <option>Shopify</option>
+                                </select>
+                                <small *ngIf="submitted && sideForm.get('service')?.errors" class="text-danger">
+                                    Service selection is required
+                                </small>
+                            </div>
                         </div>
 
                         <div class="col-lg-12">
-                            <textarea name="message" class="form-control" rows="6" placeholder="Your Message" required
-                                [(ngModel)]="formData.message">
-              </textarea>
+                            <div class="form-group mb-3">
+                                <textarea class="form-control" rows="6" placeholder="Your Message"
+                                    formControlName="message"></textarea>
+                                <small *ngIf="submitted && sideForm.get('message')?.errors" class="text-danger">
+                                    Message is required
+                                </small>
+                            </div>
                         </div>
 
                         <div class="col-lg-12">

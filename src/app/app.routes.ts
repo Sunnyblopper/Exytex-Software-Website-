@@ -12,6 +12,7 @@ import { SeoServicesComponent } from './Pages/seo-services';
 import { GraphicDesigningComponent } from './Pages/graphic-designing';
 import { AmazonServicesComponent } from './Pages/amazon-services';
 import { ErpServicesComponent } from './Pages/erp.services';
+import { PortfolioDetailsComponent } from './Pages/portfolio-details';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -27,5 +28,6 @@ export const routes: Routes = [
   { path: 'graphic-designing', component: GraphicDesigningComponent },
   { path: 'amazon-services', component: AmazonServicesComponent },
   { path: 'erp-services', component: ErpServicesComponent },
+  { path: 'portfolio-item/:slug', component: PortfolioDetailsComponent },
   { path: '**', redirectTo: '' }
 ];
