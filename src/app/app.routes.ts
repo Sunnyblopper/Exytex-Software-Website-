@@ -3,7 +3,6 @@ import { HomeComponent } from './Pages/home';
 import { BlogComponent } from './Pages/blog';
 import { ServiceComponent } from './Pages/service';
 import { PortfolioComponent } from './Pages/portfolio';
-import { TeamComponent } from './Pages/team';
 import { ContactComponent } from './Pages/contact';
 import { MobileAppsComponent } from './Pages/mobile-apps';
 import { DigitalMarketingComponent } from './Pages/digital-marketing';
@@ -11,15 +10,23 @@ import { WebDevelopmentComponent } from './Pages/web-development';
 import { SeoServicesComponent } from './Pages/seo-services';
 import { GraphicDesigningComponent } from './Pages/graphic-designing';
 import { AmazonServicesComponent } from './Pages/amazon-services';
-import { ErpServicesComponent } from './Pages/erp.services';
+import { GenerativeAiComponent } from './Pages/generative-ai';
+import { BlogDetailsComponent } from './Pages/blog-details';
 import { PortfolioDetailsComponent } from './Pages/portfolio-details';
+import { PrivacyComponent } from './Pages/privacy/privacy';
+import { TermsComponent } from './Pages/terms/terms';
+import { ReturnPolicyComponent } from './Pages/return-policy/return-policy';
+import { FaqComponent } from './Pages/faq/faq';
+import { AboutUsComponent } from './Pages/about-us/about-us';
+import { CustomerSupportComponent } from './Pages/customer-support/customer-support';
+import { DeleteAccountComponent } from './Pages/delete-account/delete-account';
+import { TeamComponent } from './Pages/team/team';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'service', component: ServiceComponent },
   { path: 'our-portfolio', component: PortfolioComponent },
-  { path: 'team', component: TeamComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'mobile-apps', component: MobileAppsComponent },
   { path: 'digital-marketing', component: DigitalMarketingComponent },
@@ -27,7 +34,16 @@ export const routes: Routes = [
   { path: 'seo-services', component: SeoServicesComponent },
   { path: 'graphic-designing', component: GraphicDesigningComponent },
   { path: 'amazon-services', component: AmazonServicesComponent },
-  { path: 'erp-services', component: ErpServicesComponent },
+  { path: 'generative-ai', component: GenerativeAiComponent },
+  { path: 'blog-item/:slug', component: BlogDetailsComponent },
   { path: 'portfolio-item/:slug', component: PortfolioDetailsComponent },
+  { path: 'privacy', component: PrivacyComponent },
+  { path: 'terms', component: TermsComponent },
+  { path: 'return-policy', component: ReturnPolicyComponent },
+  { path: 'faq', component: FaqComponent },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'customer-support', component: CustomerSupportComponent },
+  { path: 'delete-account', component: DeleteAccountComponent },
+  { path: 'team', component: TeamComponent },
   { path: '**', redirectTo: '' }
 ];

@@ -1,0 +1,247 @@
+.page-title-area {
+    position: relative;
+    z-index: 1;
+    background: url(../../../../public/image/clients-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.page-title-area::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.d-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.d-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.page-title-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.page-title-content h1 {
+    color: #ffffff;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.page-title-content ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+.page-title-content ul li {
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+    font-weight: 400;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.page-title-content ul li::before {
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #086AD8;
+}
+
+.page-title-content ul li:last-child::before {
+    display: none;
+}
+
+.page-title-content ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.page-title-content ul li a:hover {
+    color: #086AD8;
+}
+
+.ptb-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.sub-title {
+    color: #086AD8;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 42px;
+    color: #004d43;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 800;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: #086AD8;
+}
+
+p {
+    color: #445a58;
+    line-height: 1.8;
+}
+
+.vision-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.vision-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f4f7f6;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.vision-card:hover {
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.vision-card i {
+    font-size: 30px;
+    color: #086AD8;
+}
+
+.vision-card h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #004d43;
+}
+
+.vision-card p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.about-image-right {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.main-img {
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 20px 20px 0 #004d4310;
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #086AD8;
+    color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(8, 106, 216, 0.3);
+}
+
+.experience-badge h3 {
+    font-size: 36px;
+    margin-bottom: 0;
+    font-weight: 800;
+}
+
+.experience-badge span {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.values-img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.values-list {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.values-list li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    color: #445a58;
+}
+
+.values-list li i {
+    color: #086AD8;
+    font-size: 20px;
+    margin-top: 4px;
+}
+
+@media (max-width: 991px) {
+    h2 {
+        font-size: 32px;
+    }
+
+    .mt-100 {
+        margin-top: 60px;
+    }
+
+    .experience-badge {
+        padding: 15px;
+    }
+
+    .experience-badge h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-title-area {
+        height: 250px;
+    }
+
+    .ptb-100 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}

@@ -1,0 +1,54 @@
+<section class="blog-details-area ptb-100" *ngIf="post">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="blog-details-desc">
+                    <div class="article-image">
+                        <img [src]="post.image" [alt]="post.title">
+                    </div>
+
+                    <div class="article-content">
+                        <div class="entry-meta">
+                            <ul>
+                                <li>
+                                    <span>Posted On:</span>
+                                    <a href="javascript:void(0)">{{post.date}}</a>
+                                </li>
+                                <li>
+                                    <span>Category:</span>
+                                    <a href="javascript:void(0)">{{post.category}}</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h3>{{post.title}}</h3>
+
+                        <p>
+                            {{post.content}}
+                        </p>
+
+                        <blockquote class="flaticon-quote">
+                            <p>{{post.description}}</p>
+                        </blockquote>
+
+                        <p>
+                            Effective digital strategy in 2026 requires a deep understanding of these emerging
+                            technologies.
+                            Whether it's the cost-efficiency of new models or the autonomous capabilities of Agentic AI,
+                            businesses must stay informed to remain competitive.
+                        </p>
+                    </div>
+
+                    <div class="article-footer">
+                        <div class="article-tags">
+                            <span><i class='bx bx-purchase-tag'></i></span>
+                            <a href="javascript:void(0)">Tech</a>,
+                            <a href="javascript:void(0)">AI</a>,
+                            <a href="javascript:void(0)">Future</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

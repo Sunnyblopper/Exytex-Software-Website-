@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-erp-slider',
+  selector: 'app-gen-ai-slider',
   imports: [RouterLink],
-  templateUrl: './erp-slider.html',
-  styleUrl: './erp-slider.css',
+  templateUrl: './gen-ai-slider.html',
+  styleUrl: './gen-ai-slider.css',
 })
-export class ErpSlider {
+export class GenAiSlider {
 
 }

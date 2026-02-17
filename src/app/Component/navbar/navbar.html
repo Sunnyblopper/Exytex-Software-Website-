@@ -5,7 +5,7 @@
 
                 <!-- Logo -->
                 <a class="navbar-brand" routerLink="/">
-                    <img src="/image/exytex-logo.png" width="250" height="52" alt="logo">
+                    <img src="/image/logo.png" width="250" alt="logo">
                 </a>
 
                 <!-- Hamburger / Toggle Button -->
@@ -29,7 +29,7 @@
                         <!-- Services Dropdown -->
                         <li class="nav-item dropdown" [class.show]="isServicesOpen">
                             <a class="nav-link dropdown-toggle" routerLink="/service" routerLinkActive="active"
-                                (click)="toggleServices()">
+                                (click)="toggleServices($event)">
                                 Services
                             </a>
                             <ul class="dropdown-menu">
@@ -58,9 +58,8 @@
                                         Designing</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a routerLink="/amazon-services" routerLinkActive="active" class="nav-link"
-                                        (click)="toggleMenu()">Amazon
-                                        Services</a>
+                                    <a routerLink="/generative-ai" routerLinkActive="active" class="nav-link"
+                                        (click)="toggleMenu()">Generative AI Section</a>
                                 </li>
                             </ul>
                         </li>
@@ -73,11 +72,6 @@
                         <li class="nav-item">
                             <a routerLink="/our-portfolio" routerLinkActive="active" class="nav-link"
                                 (click)="toggleMenu()">Portfolio</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a routerLink="/team" routerLinkActive="active" class="nav-link"
-                                (click)="toggleMenu()">Team</a>
                         </li>
 
                         <li class="nav-item">

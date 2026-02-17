@@ -26,7 +26,10 @@ export class Navbar {
     }
   }
 
-  toggleServices() {
+  toggleServices(event?: Event) {
+    if (window.innerWidth <= 991 && event) {
+      event.preventDefault();
+    }
     this.isServicesOpen = !this.isServicesOpen;
   }
 }

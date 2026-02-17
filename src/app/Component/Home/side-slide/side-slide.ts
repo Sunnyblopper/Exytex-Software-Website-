@@ -44,7 +44,7 @@ export class SideSlide {
     }
 
     const formData = this.sideForm.value;
-    const apiUrl = 'https://exytex-software-website-backend.vercel.app/mail2/job-form';
+    const apiUrl = 'https://syntk-software-website-backend.vercel.app/mail2/job-form';
 
     this.http.post(apiUrl, formData).subscribe({
       next: (response) => {

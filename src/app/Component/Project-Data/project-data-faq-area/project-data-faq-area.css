@@ -7,9 +7,11 @@
     margin-bottom: 30px;
 }
 
-img {
-    max-width: 100%;
+.project-details-image img {
+    width: 100%;
     height: auto;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .projects-details-desc {
@@ -53,6 +55,7 @@ img {
     max-width: 20%;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 20px;
 }
 
 .projects-details-desc .project-details-info .single-info-box h4 {
@@ -80,8 +83,10 @@ img {
     font-weight: 500;
     border-radius: 2px;
     border: none;
+    text-align: center;
 }
 
+/* Links */
 a {
     text-decoration: none;
     transition: 0.5s;
@@ -91,5 +96,130 @@ a {
 a:hover {
     background-color: #0fd3e7;
     transition: 0.5s;
+}
 
+/* 8 Responsive Media Queries */
+
+/* 1. max-width: 1248px */
+@media (max-width: 1248px) {
+    .projects-details-desc h3 {
+        font-size: 28px;
+    }
+
+    .projects-details-desc .project-details-info .single-info-box h4 {
+        font-size: 17px;
+    }
+}
+
+/* 2. max-width: 1024px */
+@media (max-width: 1024px) {
+    .projects-details-desc h3 {
+        font-size: 26px;
+    }
+
+    .projects-details-desc p {
+        font-size: 15px;
+    }
+
+    .default-btn {
+        padding: 13px 30px;
+        font-size: 15px;
+    }
+}
+
+/* 3. max-width: 992px */
+@media (max-width: 992px) {
+    .projects-details-desc h3 {
+        font-size: 24px;
+    }
+
+    .projects-details-desc .project-details-info .single-info-box {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+/* 4. max-width: 768px */
+@media (max-width: 768px) {
+    .projects-details-desc h3 {
+        font-size: 22px;
+    }
+
+    .projects-details-desc p {
+        font-size: 14px;
+    }
+
+    .projects-details-desc .project-details-info .single-info-box {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .default-btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+
+/* 5. max-width: 576px */
+@media (max-width: 576px) {
+    .projects-details-desc h3 {
+        font-size: 20px;
+    }
+
+    .projects-details-desc p {
+        font-size: 13px;
+    }
+
+    .projects-details-desc .project-details-info .single-info-box {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* 6. max-width: 480px */
+@media (max-width: 480px) {
+    .projects-details-desc h3 {
+        font-size: 18px;
+    }
+
+    .projects-details-desc p {
+        font-size: 12px;
+    }
+
+    .default-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
+/* 7. max-width: 400px */
+@media (max-width: 400px) {
+    .projects-details-desc h3 {
+        font-size: 16px;
+    }
+
+    .projects-details-desc p {
+        font-size: 11px;
+    }
+
+    .default-btn {
+        padding: 9px 18px;
+        font-size: 12px;
+    }
+}
+
+/* 8. max-width: 300px */
+@media (max-width: 300px) {
+    .projects-details-desc h3 {
+        font-size: 14px;
+    }
+
+    .projects-details-desc p {
+        font-size: 10px;
+    }
+
+    .default-btn {
+        padding: 8px 15px;
+        font-size: 11px;
+    }
 }
