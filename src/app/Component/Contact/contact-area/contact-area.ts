@@ -38,7 +38,7 @@ export class ContactArea {
     }
 
     const formData = this.contactForm.value;
-    const apiUrl = 'https://syntk-software-website-backend.vercel.app/mail2/contact-form';
+    const apiUrl = 'https://exytex-software-website-backend.vercel.app/mail2/contact-form';
 
     this.http.post(apiUrl, formData).subscribe({
       next: (response) => {
