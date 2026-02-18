@@ -73,3 +73,86 @@ a:hover {
 .copyright-area .copyright-area-content ul li a:hover {
     color: #086AD8;
 }
+
+@media (max-width: 1248px) {
+    .copyright-area .copyright-area-content ul li {
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .copyright-area .copyright-area-content ul {
+        text-align: center;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 991px) {
+    .copyright-area .copyright-area-content p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .copyright-area .copyright-area-content .row {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .copyright-area .copyright-area-content ul li {
+        display: inline-block;
+        margin: 6px 6px;
+        font-size: 13px;
+    }
+
+    .copyright-area .copyright-area-content p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 487px) {
+    .copyright-area .copyright-area-content .row {
+        flex-wrap: nowrap;
+    }
+
+    .copyright-area .copyright-area-content ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .copyright-area .copyright-area-content ul li {
+        margin: 0 4px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .copyright-area .copyright-area-content ul li::before {
+        display: none;
+    }
+
+    .copyright-area .copyright-area-content p {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 360px) {
+    .copyright-area {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .copyright-area .copyright-area-content ul li {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 300px) {
+    .copyright-area .copyright-area-content p {
+        font-size: 11px;
+    }
+}
